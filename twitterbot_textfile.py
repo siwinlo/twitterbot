@@ -30,7 +30,7 @@ def post_tweet():
             print(res)
             if res != "":
                 api.update_status(res)
-                sleep(3000)
+                sleep(5000)
             else:
                 pass
         except tweepy.TweepError as e:
