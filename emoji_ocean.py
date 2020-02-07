@@ -9,7 +9,6 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
-
 # emoji ocean
 for tweet in tweepy.Cursor(api.search, q="#ocean").items():
     try:
@@ -26,6 +25,7 @@ for tweet in tweepy.Cursor(api.search, q="#ocean").items():
         print(res_str)
         api.update_status(res_str)
         sleep(3000)
+
     except tweepy.TweepError as e:
         print(e.reason, "len(res_str)", len(res_str))
 
