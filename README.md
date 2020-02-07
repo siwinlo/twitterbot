@@ -1,5 +1,3 @@
-This is a simple Python twitterbot that translates recent tweets with #garden into an emoji garden
+This is a simple Python twitterbot that translates recent tweets with #ocean into an emoji ocean
 
-@em0ji_garden
-
-🌺
+@_em0cean_
