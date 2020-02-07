@@ -1,0 +1,17 @@
+{
+	"name": "twitterbot",
+	"version": "1.0.0",
+	"description": "This is a simple Python twitterbot that translates recent tweets with #ocean into an emoji ocean",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"serverless-python-requirements": "^5.0.1"
+	},
+	"directories": {
+		"doc": "doc"
+	}
+}
