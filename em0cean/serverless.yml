@@ -22,7 +22,7 @@ org: siwinlo
 
 provider:
   name: aws
-  runtime: python3.8
+  runtime: python3.7
   stage: dev
   region: us-east-1
 
@@ -59,4 +59,4 @@ plugins:
 custom:
   #env: ${file(./${self:provider.stage}.env.json)}
   pythonRequirements:
-    dockerizePip: non-linux
+    dockerizePip: false

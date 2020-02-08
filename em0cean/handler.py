@@ -10,7 +10,7 @@ api = tweepy.API(auth)
 
 
 # emoji ocean
-def emoji_ocean():
+def emoji_ocean(event, context):
     for tweet in tweepy.Cursor(api.search, q="#ocean").items():
         try:
             res_str = "Tweet by: @" + tweet.user.screen_name + "\n"
@@ -26,10 +26,10 @@ def emoji_ocean():
             print(res_str)
             api.update_status(res_str)
             # sleep(3000)
+            return None
         except tweepy.TweepError as e:
             print(e.reason, "len(res_str)", len(res_str))
 
         except StopIteration:
             break
 
-emoji_ocean()
